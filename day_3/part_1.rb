@@ -24,4 +24,4 @@ end
 # Sum the priorities to get answer
 answer = priority_each_bag.sum
 
-puts "The sum of prioriteis for each common item is #{answer}"
+puts "The sum of priorities for each common item is #{answer}"
