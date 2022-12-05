@@ -2,7 +2,7 @@ file = File.open("input.txt")
 lines = file.readlines
 file.close
 
-# Loop over each assignment pair and detect if they are overlapping
+# Loop over each assignment pair and detect if they are fully overlapping
 pairs_that_overlap = lines.map do |line|
     parsed_pair = line.match(/(\d+)-(\d+),(\d+)-(\d+)/)
     parsed_pair = parsed_pair[1..].each_slice(2)
